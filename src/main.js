@@ -9,3 +9,5 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 
 createApp(App).mount('#app')
 app.use(BootstrapVue3)
+
+import "bootstrap/dist/js/bootstrap.js"

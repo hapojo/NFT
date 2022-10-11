@@ -1,6 +1,6 @@
 aside {
     color: #fff;
-    width: 200px;
+    width: 220px;
     padding-left: 20px;
     height: 98vh;
     background-image: linear-gradient(30deg, #0C155B, #0C155B);
@@ -13,10 +13,11 @@ aside a {
     font-size: 14px;
     color: #FFFFFF;
     height: 21.75px;
-    font-weight: 500;
+    font-weight: 400;
     display: block;
-    padding: 12spx;
+    padding: 10px;
     padding-left: 30px;
+    margin-top: 15px;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
 }
@@ -26,12 +27,14 @@ aside a:hover {
     background: linear-gradient(266.19deg, #2A3266 15.97%, #452A75 39.43%, #622285 65.05%);
     outline: none;
     position: relative;
+    height: 35px;
+    padding-bottom: 10px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-aside a i {
-    margin-right: 5px;
+aside a img {
+    margin-right: 10px;
 }
 
 aside a:hover::after {
@@ -50,7 +53,7 @@ aside a:hover::before {
     content: "";
     position: absolute;
     background-color: transparent;
-    top: 38px;
+    top: 35px;
     right: 0;
     height: 35px;
     width: 35px;
@@ -60,7 +63,25 @@ aside a:hover::before {
 
 aside p {
     margin: 0;
+    margin-left: 10px;
     padding: 40px 0;
+}
+
+aside span {
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F61872;
+    margin-left: 25px;
+
+}
+
+.first-link {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 body {
