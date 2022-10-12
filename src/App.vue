@@ -36,5 +36,6 @@ body {
 
 .right-bar {
   width: 80%;
+  padding-top: 20px;
 }
 </style>
