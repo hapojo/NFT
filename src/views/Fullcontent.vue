@@ -30,7 +30,7 @@ body {
 }
 
 .side-bar {
-    width: 20%;
+    width: 18%;
 }
 
 .right-bar {
