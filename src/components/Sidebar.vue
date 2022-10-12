@@ -7,14 +7,21 @@
 
             <div class="first-link">
                 <span>Market Place</span>
-                <a href="javascript:void(0)" class="active">
+                <!-- <a href="/" class="active">
                     <img src="../assets/image/market.svg" alt="">
                     Market
-                </a>
-                <a href="javascript:void(0)">
+                </a> -->
+                <router-link to="/" class="router-link-active router-link-exact-active"> <img
+                        src="../assets/image/market.svg" alt=""> Market</router-link>
+
+                <!-- <a href="javascript:void(0)">
                     <img src="../assets/image/activebid.svg" alt="">
                     Active Bid
-                </a>
+                </a> -->
+                <router-link to="/active"><img src="../assets/image/activebid.svg" alt="">
+                    Active
+                    Bid</router-link>
+
                 <a href="javascript:void(0)">
                     <img src="../assets/image/saved.svg" alt="">
                     Saved
@@ -40,8 +47,10 @@
 
         </aside>
     </div>
+
+
 </template>
 
 <style>
-@import './Sidebar.css'
+@import './Sidebar.css';
 </style>

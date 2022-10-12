@@ -22,7 +22,19 @@ aside a {
     -webkit-tap-highlight-color: transparent;
 }
 
-aside a:hover {
+aside a:hover,
+a:active {
+    color: #FFFFFF;
+    background: linear-gradient(266.19deg, #2A3266 15.97%, #452A75 39.43%, #622285 65.05%);
+    outline: none;
+    position: relative;
+    height: 35px;
+    padding-bottom: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.router-link-active {
     color: #FFFFFF;
     background: linear-gradient(266.19deg, #2A3266 15.97%, #452A75 39.43%, #622285 65.05%);
     outline: none;
@@ -37,7 +49,8 @@ aside a img {
     margin-right: 10px;
 }
 
-aside a:hover::after {
+aside a:hover::after,
+.router-link-active::after {
     content: "";
     position: absolute;
     background-color: transparent;
@@ -49,7 +62,8 @@ aside a:hover::after {
     box-shadow: 0 15px 0 0 #452A75;
 }
 
-aside a:hover::before {
+aside a:hover::before,
+.router-link-active::before {
     content: "";
     position: absolute;
     background-color: transparent;

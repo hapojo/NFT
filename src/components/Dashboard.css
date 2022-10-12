@@ -1,0 +1,15 @@
+.market {
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+}
+
+.discovery-section {
+    width: 64%;
+    background-color: red;
+}
+
+.paint-section {
+    width: 35%;
+    background-color: green;
+}
