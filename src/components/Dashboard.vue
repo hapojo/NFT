@@ -2,24 +2,32 @@
     <div class="market">
         <div class="discovery-section">
             <div class="border-dis">
-                Discover,
-                Buy and Sell
-                Your own NFT Now
+                <div class="dis-text">
+                    Discover, <br>
+                    Buy and Sell <br>
+                    Your own NFT Now
+                </div>
 
                 <div>
                     <button class="button-1" role="button">Discover Now</button>
                     <button class="button-2" role="button">Create Yours</button>
                 </div>
-                <img src="../assets/image/discoverT.svg" alt="">
+                <div class="dis-img1">
+                    <img src="../assets/image/discoverT.svg" alt="">
+                </div>
+
+                <div class="dis-img2">
+                    <img src="../assets/image/discover.svg" alt="">
+                </div>
+
+
 
             </div>
         </div>
 
         <div class="paint-section">
             <div class="border-pa">
-                Discover,
-                Buy and Sell
-                Your own NFT Now
+
             </div>
         </div>
 

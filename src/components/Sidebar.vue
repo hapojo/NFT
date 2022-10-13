@@ -1,6 +1,8 @@
 <template>
-    <div>
-        <aside>
+    <div id="whole">
+        <label for="btnHamb" class="showmenu">&#9776</label>
+        <input type="checkbox" id="btnHamb">
+        <aside id="showmenu">
             <p> <img src="../assets/image/logo.svg" alt="">
                 <img src="../assets/image/xcrptme.svg" alt="">
             </p>

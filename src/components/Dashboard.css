@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
 .market {
     display: flex;
     flex-direction: row;
-    padding-top: 20px;
+    margin-right: 20px;
 }
 
 .discovery-section {
@@ -11,24 +13,45 @@
 
 .border-dis {
     width: 48vw;
-    height: 10vw;
+    height: 11.5vw;
     padding: 20px;
     position: absolute;
     background: linear-gradient(281.71deg, #21358B 12.57%, #302B76 44.74%, #602083 75.39%, #881C8A 101.64%, rgba(255, 0, 184, 0.44) 107.34%);
     border: 1px solid linear-gradient(281.71deg, #21358B 12.57%, #302B76 44.74%, #602083 75.39%, #881C8A 101.64%, rgba(255, 0, 184, 0.44) 107.34%);
     border-radius: 12px;
+    padding-left: 40px;
+    margin-top: 25px;
 }
 
-.border-dis img {
+.dis-text {
+    font-family: 'Aclonica';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.dis-img1 {
     position: absolute;
-    top: 5px;
+    top: 20px;
     left: 200px;
+    width: 20%;
+    height: 20%;
+}
+
+.dis-img2 {
+    position: absolute;
+    top: -39px;
+    left: 580px;
+    width: 20%;
+    height: 20%;
 }
 
 .button-1 {
     background: linear-gradient(259.75deg, #DA08EC 16.07%, rgba(240, 14, 193, 0.95) 73.5%);
     border-radius: 6px;
-    border: 0.5px solid #FFFFFF;
+    border: 0.5px solid #DA08EC;
     color: #FFFFFF;
     cursor: pointer;
     font-family: "Poppins";
@@ -48,7 +71,7 @@
 .button-2 {
     background: transparent;
     border-radius: 6px;
-    border: 0.5px solid;
+    border: 0.5px solid #c996e2;
     color: #FAFAFA;
     cursor: pointer;
     font-family: "Poppins";
@@ -58,6 +81,7 @@
     line-height: 20px;
     padding: 10px 16px;
     text-align: center;
+    margin-left: 10px;
 }
 
 .button-2:hover,
@@ -66,14 +90,26 @@
 }
 
 .paint-section {
-    width: 35%;
+    width: 34%;
+    height: 87vh;
+    padding-top: 10px;
+    background: #22295A;
+    opacity: 0.4;
+    border-radius: 22px;
+    margin-top: 20px;
 }
 
 .border-pa {
     width: 25vw;
     height: 15vw;
     padding: 20px;
+    margin-left: 14px;
     background: #321742;
     border: 1px solid linear-gradient(281.71deg, #21358B 12.57%, #302B76 44.74%, #602083 75.39%, #881C8A 101.64%, rgba(255, 0, 184, 0.44) 107.34%);
     border-radius: 12px;
+    background-image: url('../assets/image/paint.svg');
+    background-repeat: no-repeat;
 }
+
+
+@media (max-width: 1507px) {}

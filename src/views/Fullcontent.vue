@@ -37,4 +37,11 @@ body {
     width: 80%;
     padding-top: 20px;
 }
+
+@media (max-width: 1507px) {
+    body {
+        /* flex-direction: column; */
+    }
+
+}
 </style>

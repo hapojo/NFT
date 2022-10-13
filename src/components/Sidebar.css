@@ -1,9 +1,22 @@
+label {
+    color: #fff;
+    text-decoration: none;
+}
+
+.showmenu {
+    display: none;
+}
+
+#btnHamb {
+    display: none;
+}
+
 aside {
     color: #fff;
     width: 220px;
     padding-left: 20px;
     height: 98vh;
-    background-image: linear-gradient(30deg, #0C155B, #0C155B);
+    background: linear-gradient(30deg, #0C155B, #0C155B);
     border-top-right-radius: 80px;
     border-bottom-right-radius: 80px;
     margin-left: 10px;
@@ -104,4 +117,35 @@ body {
     height: 100vh;
     margin: 0;
     background: #2A3266;
+}
+
+@media (max-width: 1507px) {
+
+    /* aside {
+        height: 98vh;
+        background: linear-gradient(30deg, #0C155B, #0C155B);
+    } */
+
+    .showmenu {
+        font-size: 50px;
+        display: block;
+        text-align: right;
+        padding: 5px;
+        /* position: fixed; */
+        /* z-index: 999; */
+    }
+
+    #btnHamb:checked~#showmenu {
+        transition: all .5s;
+        /* height: 80vh; */
+        /* display: none; */
+        margin-left: -220px;
+
+    }
+
+    /* #showmenu {
+        transition: all .5s;
+        height: 0;
+    } */
+
 }
