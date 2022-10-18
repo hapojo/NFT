@@ -40,8 +40,13 @@ body {
 
 @media (max-width: 1507px) {
     body {
-        /* flex-direction: column; */
+        flex-direction: column;
     }
 
+    .right-bar {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 </style>

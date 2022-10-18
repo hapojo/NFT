@@ -36,8 +36,8 @@
 }
 
 .search input {
-    width: 350px;
-    height: 40px;
+    width: 100%;
+    height: 5vh;
     color: #FFFFFF !important;
     border: 2px solid #595D7C;
     border-radius: 100px;
@@ -53,6 +53,11 @@
     color: #FFFFFF;
 }
 
+.search input:focus {
+    background-color: #595D7C;
+    border: #595D7C;
+}
+
 
 .knobs,
 .layer {
@@ -65,8 +70,8 @@
 
 .button {
     position: relative;
-    width: 200px;
-    height: 39px;
+    width: 17%;
+    height: 5vh;
     overflow: hidden;
     margin-left: 300px;
 }
@@ -108,8 +113,8 @@
 #button-10 .knobs span {
     position: absolute;
     top: 4px;
-    width: 100px;
-    height: 30px;
+    width: 50%;
+    height: 4vh;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
@@ -162,8 +167,8 @@
     margin-right: 10px;
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 2.5vw;
+    height: 5vh;
     border-radius: 100px;
 }
 
@@ -176,5 +181,14 @@
     position: relative;
     display: inline-block;
     border-radius: 100px;
+    width: 2.5vw;
+    height: 5vh;
+}
+
+@media (max-width: 999px) {
+    .top-content {
+        display: none;
+    }
+
 }
 </style>
