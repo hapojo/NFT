@@ -37,7 +37,7 @@
 
 .search input {
     width: 100%;
-    height: 5vh;
+    /* height: 40px; */
     color: #FFFFFF !important;
     border: 2px solid #595D7C;
     border-radius: 100px;
@@ -55,7 +55,7 @@
 
 .search input:focus {
     background-color: #595D7C;
-    border: #595D7C;
+    border: 2px solid #595D7C;
 }
 
 
@@ -70,8 +70,8 @@
 
 .button {
     position: relative;
-    width: 17%;
-    height: 5vh;
+    width: 200px;
+    height: 39px;
     overflow: hidden;
     margin-left: 300px;
 }
@@ -113,8 +113,8 @@
 #button-10 .knobs span {
     position: absolute;
     top: 4px;
-    width: 50%;
-    height: 4vh;
+    width: 100px;
+    height: 30px;
     font-size: 10px;
     font-weight: bold;
     text-align: center;
@@ -167,8 +167,8 @@
     margin-right: 10px;
     position: relative;
     display: inline-block;
-    width: 2.5vw;
-    height: 5vh;
+    width: 40px;
+    height: 40px;
     border-radius: 100px;
 }
 
@@ -181,14 +181,22 @@
     position: relative;
     display: inline-block;
     border-radius: 100px;
-    width: 2.5vw;
-    height: 5vh;
 }
 
 @media (max-width: 999px) {
     .top-content {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 0;
+    }
+
+    .button {
+        margin-left: 20px;
         display: none;
     }
 
+    .notification {
+        margin-left: 10px;
+    }
 }
 </style>
