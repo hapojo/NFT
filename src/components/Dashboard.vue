@@ -19,11 +19,30 @@
                 <div class="dis-img2">
                     <img src="../assets/image/discover.svg" alt="">
                 </div>
-
-
-
             </div>
+
+
+            <div class="container HotArt">
+                <div class="Hot-bid">Hot bid</div>
+                <div class="Art-All">
+                    <ul>
+                        <li>All</li>
+                        <li>Art</li>
+                        <li>Music</li>
+                        <li>Sport</li>
+                        <li>Entertainment</li>
+                        <li>Health</li>
+                        <li>Fashion</li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+
         </div>
+
+
 
         <div class="paint-section">
             <div class="border-pa">
@@ -39,3 +58,7 @@
 <style>
 @import './Dashboard.css';
 </style>
+
+<script>
+
+</script>

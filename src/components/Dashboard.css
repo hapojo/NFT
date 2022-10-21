@@ -14,7 +14,7 @@
 .border-dis {
     width: 48vw;
     padding: 20px;
-    position: absolute;
+    /* position: absolute; */
     background: linear-gradient(281.71deg, #21358B 12.57%, #302B76 44.74%, #602083 75.39%, #881C8A 101.64%, rgba(255, 0, 184, 0.44) 107.34%);
     border: 1px solid linear-gradient(281.71deg, #21358B 12.57%, #302B76 44.74%, #602083 75.39%, #881C8A 101.64%, rgba(255, 0, 184, 0.44) 107.34%);
     border-radius: 12px;
@@ -96,6 +96,51 @@
     background: linear-gradient(281.71deg, #21358B 12.57%, #302B76 44.74%, #602083 75.39%, #881C8A 101.64%, rgba(255, 0, 184, 0.44) 107.34%);
 }
 
+.HotArt {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 20px;
+}
+
+.Hot-bid {
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 550;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.Art-All ul {
+    display: flex;
+    list-style: none;
+    margin-right: 25px;
+    cursor: pointer;
+}
+
+.Art-All li {
+    font-family: 'Poppins';
+    font-size: 14px;
+    font-weight: 350;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 18px;
+}
+
+.Art-All li:hover {
+    border-bottom: 2px solid #F61872;
+    transform: translatey(-2px);
+    transition: all 0.2s;
+
+}
+
+.Art-All li:active {
+    border-bottom: 2px solid #F61872;
+    color: #F61872;
+}
+
 .paint-section {
     width: 34%;
     /* height: 100vh; */
@@ -117,7 +162,6 @@
     background-image: url('../assets/image/paint.svg');
     background-repeat: no-repeat;
 }
-
 
 @media (max-width: 1507px) {
     .market {

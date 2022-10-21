@@ -8,9 +8,11 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
+    "@vue/cli-plugin-babel": "^5.0.8",
     "bootstrap": "^5.2.2",
     "bootstrap-icons": "^1.9.1",
-    "bootstrap-vue-3": "^0.3.11",
+    "bootstrap-vue-3": "^0.3.12",
+    "mdb-ui-kit": "^5.0.0",
     "vue": "^3.2.38",
     "vue-router": "^4.0.13"
   },
