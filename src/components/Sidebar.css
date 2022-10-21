@@ -102,6 +102,27 @@ aside span {
     margin-bottom: 25px;
 }
 
+.bottom-form {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 5px;
+    background: #A717B4;
+    border: #A717B4;
+    border-width: 20%;
+    height: 19%;
+    margin-right: 10px;
+    border-bottom-right-radius: 50px;
+}
+
+.bottom-form input {
+    width: 95%;
+    background: #333333;
+    border-radius: 7px;
+
+}
+
 body {
     font-family: 'Poppins';
     width: 100%;
@@ -148,6 +169,8 @@ body {
         margin-left: 0;
         transform: translateX(-220px);
     }
+
+
 
     .mobile-open aside {
         transform: translateX(0);

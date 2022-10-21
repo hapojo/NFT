@@ -38,6 +38,88 @@
             </div>
 
 
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="brents">
+                            <div><img src="../assets/image/Brent.svg" alt=""></div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div>Brents</div>
+                                <div>by <span style="color: #F4CF08;">@femistic</span></div>
+                            </div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div><img src="../assets/image/icon.svg" alt="">
+                                    <span style="color: #F61872; margin-left: 5px;">ETH</span>
+                                </div>
+                                <div>
+                                    09h 35m 09s
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-3">
+                        <div class="brents">
+                            <div><img src="../assets/image/mamon.svg" alt=""></div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div>Mamon</div>
+                                <div>by <span style="color: #F4CF08;">@manxo</span></div>
+                            </div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div><img src="../assets/image/icon.svg" alt="">
+                                    <span style="color: #F61872; margin-left: 5px;">ETH</span>
+                                </div>
+                                <div>
+                                    09h 35m 09s
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-3">
+                        <div class="brents">
+                            <div><img src="../assets/image/Brittle.svg" alt=""></div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div>Brittle</div>
+                                <div>by <span style="color: #F4CF08;">@ernex</span></div>
+                            </div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div><img src="../assets/image/icon.svg" alt="">
+                                    <span style="color: #F61872; margin-left: 5px;">ETH</span>
+                                </div>
+                                <div>
+                                    09h 35m 09s
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-3">
+                        <div class="brents">
+                            <div><img src="../assets/image/Rex.svg" alt=""></div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div>Rex</div>
+                                <div>by <span style="color: #F4CF08;">@Eriang</span></div>
+                            </div>
+                            <div style="justify-content: space-between; display: flex;">
+                                <div><img src="../assets/image/icon.svg" alt="">
+                                    <span style="color: #F61872; margin-left: 5px;">ETH</span>
+                                </div>
+                                <div>
+                                    09h 35m 09s
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
 
 
         </div>

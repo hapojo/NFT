@@ -52,11 +52,18 @@
                     </a>
                 </div>
 
+                <div class="bottom-form">
+                    <div>Enter your mail to get product update</div>
+                    <div><input type="text" placeholder="Enter your mail here"></div>
+                </div>
+
             </aside>
 
             <div class="mobile_overlay" @click="mobileOverlay"></div>
 
+
         </div>
+
 
 
     </div>
