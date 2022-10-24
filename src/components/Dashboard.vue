@@ -128,7 +128,50 @@
 
         <div class="paint-section">
             <div class="border-pa">
+            </div>
+            <div style="display: flex; justify-content:space-between; margin-top: 5px; margin-bottom: 5px;">
+                <div>Pain Artwork</div>
+                <div>sat, 27 jun</div>
+            </div>
+            <div>
+                <img src="../assets/image/min.svg" style="margin-right: 5px;" alt="">
+                by <span style="color: #F9E10A;"> Mugagbe</span>
+                <p>Once you get pain, you can not connect with everyone and get major privileges from them. Cure your
+                    pain and make a gain</p>
+            </div>
+            <div class="accor-list">
+                <ul>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <span>Property</span>
+                        <p>This page was written in HTML and CSS.</p>
+                    </li>
+                    <li>
+                        <input type="checkbox" checked>
+                        <i></i>
+                        <span>Contract Address</span>
+                        <p>Using the sibling and checked </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="current">
+                <h5>Current Bid</h5>
+                <div style="display: flex; justify-content:space-between">
+                    <p style="font-size: 20px;">32.65 ETH</p>
+                    <p>$96,653.09</p>
+                </div>
+            </div>
 
+            <div class="HMS">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="hour">
+                            <h3>35</h3>
+                            <span>Hours</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
