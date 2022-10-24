@@ -157,13 +157,14 @@
 }
 
 .paint-section {
-    width: 34%;
-    /* height: 100vh; */
+    width: 30%;
+    height: 88vh;
     padding-top: 10px;
     background: #22295A;
     border-radius: 22px;
     padding-right: 10px;
     padding-left: 10px;
+    padding-bottom: 20px;
     margin-top: 20px;
     color: #FFFFFF;
     font-family: Poppins;
@@ -172,12 +173,17 @@
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
+.paint-section::-webkit-scrollbar {
+    display: none;
 }
 
 .border-pa {
-    width: 25vw;
-    height: 15vw;
+    width: 22vw;
+    height: 12vw;
     background: #321742;
     border: 1px solid linear-gradient(281.71deg, #21358B 12.57%, #302B76 44.74%, #602083 75.39%, #881C8A 101.64%, rgba(255, 0, 184, 0.44) 107.34%);
     border-radius: 12px;
@@ -187,7 +193,7 @@
 
 .accor-list {
     padding-right: 20px;
-    padding-left: 0 !important;
+
 }
 
 ul {
@@ -198,6 +204,7 @@ ul {
     border-bottom: 1px solid #FFFFFF;
     margin-top: 5px;
 }
+
 
 
 ul li:nth-of-type(1) {
@@ -294,7 +301,7 @@ ul li input[type=checkbox]:checked~i:after {
 }
 
 .current p {
-    font-family: Poppins;
+    font-family: 'Poppins';
     font-weight: 600;
     line-height: 48px;
     letter-spacing: 0em;
@@ -302,20 +309,37 @@ ul li input[type=checkbox]:checked~i:after {
 }
 
 .HMS {
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .hour {
-    background: #272F61;
-    border: 1px solid #272F61;
-    border-radius: 100%;
+    border: 1px solid #1F3CB9;
+    border-radius: 50%;
     padding: 5px;
     width: 88px;
     height: 88px;
-    left: 8px;
-    top: 4px;
+    text-align: center;
+    box-shadow: inset 0px 10px 20px 2px #1F3CB9;
+}
 
-    /* filter: blur(4px); */
+.minute {
+    border: 1px solid #DA08EC;
+    border-radius: 50%;
+    padding: 5px;
+    width: 88px;
+    height: 88px;
+    text-align: center;
+    box-shadow: inset 0px 10px 20px 2px #DA08EC;
+}
+
+.second {
+    border: 1px solid #F61872;
+    border-radius: 50%;
+    padding: 5px;
+    width: 88px;
+    height: 88px;
+    text-align: center;
+    box-shadow: inset 0px 10px 20px 2px #F61872;
 }
 
 @media (max-width: 1507px) {

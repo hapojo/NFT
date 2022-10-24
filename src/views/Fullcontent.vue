@@ -24,7 +24,7 @@ import Top from '../components/Top.vue'
 body {
     background: #2A3266;
     padding-top: 10px;
-    height: 100vh;
+    height: 100vh !important;
     display: flex;
     flex-direction: row;
 }

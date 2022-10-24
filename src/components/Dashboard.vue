@@ -158,7 +158,7 @@
             <div class="current">
                 <h5>Current Bid</h5>
                 <div style="display: flex; justify-content:space-between">
-                    <p style="font-size: 20px;">32.65 ETH</p>
+                    <p style="font-size: 22px;">32.65 ETH</p>
                     <p>$96,653.09</p>
                 </div>
             </div>
@@ -171,8 +171,33 @@
                             <span>Hours</span>
                         </div>
                     </div>
+
+                    <div class="col-4">
+                        <div class="minute">
+                            <h3>05</h3>
+                            <span>Minutes</span>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="second">
+                            <h3>02</h3>
+                            <span>Seconds</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+
+
+            <div style="padding-top: 20px; text-align: center;">
+                <button class="button-2" role="button" style="margin-right: 60px;">Full Now</button>
+                <button class="button-1" role="button">Bid Now</button>
+            </div>
+
+
+
+
         </div>
 
     </div>
