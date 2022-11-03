@@ -129,6 +129,16 @@
     margin-left: 18px;
 }
 
+.inactivecat {
+    color: #fff;
+    border-bottom: 2px solid transparent;
+}
+
+.activecat {
+    border-bottom: 2px solid #F61872;
+    color: #F61872;
+}
+
 .Art-All li:hover {
     border-bottom: 2px solid #F61872;
     transform: translatey(-2px);

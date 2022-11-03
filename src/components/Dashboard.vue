@@ -25,14 +25,36 @@
             <div class="container HotArt">
                 <div class="Hot-bid">Hot bid</div>
                 <div class="Art-All">
+
                     <ul>
-                        <li>All</li>
-                        <li>Art</li>
-                        <li>Music</li>
-                        <li>Sport</li>
-                        <li>Entertainment</li>
-                        <li>Health</li>
-                        <li>Fashion</li>
+                        <li :class="selectedCategory == 'all' ? 'activecat' : 'inactivecat'"
+                            @click="categoryChange('all')">
+                            All
+                        </li>
+                        <li :class="selectedCategory == 'art' ? 'activecat' : 'inactivecat'"
+                            @click="categoryChange('art')">
+                            Art
+                        </li>
+                        <li :class="selectedCategory == 'music' ? 'activecat' : 'inactivecat'"
+                            @click="categoryChange('music')">
+                            Music
+                        </li>
+                        <li :class="selectedCategory == 'sport' ? 'activecat' : 'inactivecat'"
+                            @click="categoryChange('sport')">
+                            Sport
+                        </li>
+                        <li :class="selectedCategory == 'entertainment' ? 'activecat' : 'inactivecat'"
+                            @click="categoryChange('entertainment')">
+                            Entertainment
+                        </li>
+                        <li :class="selectedCategory == 'health' ? 'activecat' : 'inactivecat'"
+                            @click="categoryChange('health')">
+                            Health
+                        </li>
+                        <li :class="selectedCategory == 'fashion' ? 'activecat' : 'inactivecat'"
+                            @click="categoryChange('fashion')">
+                            Fashion
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -40,81 +62,24 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-3">
+
+                    <div class="col-3" v-for="data in selectedData">
                         <div class="brents">
-                            <div><img src="../assets/image/Brent.svg" alt=""></div>
+                            <div><img :src=data.image alt=""></div>
                             <div style="justify-content: space-between; display: flex;">
-                                <div>Brents</div>
-                                <div>by <span style="color: #F4CF08;">@femistic</span></div>
+                                <div>{{ data.title }}</div>
+                                <div>by <span style="color: #F4CF08;">@{{ data.creator }}</span></div>
                             </div>
                             <div style="justify-content: space-between; display: flex;">
                                 <div><img src="../assets/image/icon.svg" alt="">
                                     <span style="color: #F61872; margin-left: 5px;">ETH</span>
                                 </div>
                                 <div>
-                                    09h 35m 09s
+                                    {{ data.time }}
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-3">
-                        <div class="brents">
-                            <div><img src="../assets/image/mamon.svg" alt=""></div>
-                            <div style="justify-content: space-between; display: flex;">
-                                <div>Mamon</div>
-                                <div>by <span style="color: #F4CF08;">@manxo</span></div>
-                            </div>
-                            <div style="justify-content: space-between; display: flex;">
-                                <div><img src="../assets/image/icon.svg" alt="">
-                                    <span style="color: #F61872; margin-left: 5px;">ETH</span>
-                                </div>
-                                <div>
-                                    09h 35m 09s
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-3">
-                        <div class="brents">
-                            <div><img src="../assets/image/Brittle.svg" alt=""></div>
-                            <div style="justify-content: space-between; display: flex;">
-                                <div>Brittle</div>
-                                <div>by <span style="color: #F4CF08;">@ernex</span></div>
-                            </div>
-                            <div style="justify-content: space-between; display: flex;">
-                                <div><img src="../assets/image/icon.svg" alt="">
-                                    <span style="color: #F61872; margin-left: 5px;">ETH</span>
-                                </div>
-                                <div>
-                                    09h 35m 09s
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-3">
-                        <div class="brents">
-                            <div><img src="../assets/image/Rex.svg" alt=""></div>
-                            <div style="justify-content: space-between; display: flex;">
-                                <div>Rex</div>
-                                <div>by <span style="color: #F4CF08;">@Eriang</span></div>
-                            </div>
-                            <div style="justify-content: space-between; display: flex;">
-                                <div><img src="../assets/image/icon.svg" alt="">
-                                    <span style="color: #F61872; margin-left: 5px;">ETH</span>
-                                </div>
-                                <div>
-                                    09h 35m 09s
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
 
                 </div>
             </div>
@@ -195,9 +160,6 @@
                 <button class="button-1" role="button">Bid Now</button>
             </div>
 
-
-
-
         </div>
 
     </div>
@@ -205,10 +167,54 @@
     <router-view />
 </template>
 
+<script>
+import Brent from '../assets/image/Brent.svg'
+import Mamon from '../assets/image/mamon.svg'
+import Brittle from '../assets/image/Brittle.svg'
+
+export default {
+
+    mounted() {
+        this.selectedData = this.allData
+        this.selectedCategory = "all"
+    },
+    data() {
+        return {
+            // art music sport entertainment health fashion
+            allData: [
+                { title: "Brents", creator: "femistic", time: "09h 35m 09s", image: Brent, category: "entertainment" },
+                { title: "Mamon", creator: "manxo", time: "20h 45m 09s", image: Mamon, category: "fashion" },
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "art" },
+
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "music" },
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "sport" },
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "music" },
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "health" },
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "entertainment" },
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "health" },
+                { title: "Brittle", creator: "ernex", time: "10h 15m 17s", image: Brittle, category: "fashion" },
+
+            ],
+            selectedData: [],
+            selectedCategory: "",
+        }
+    },
+    methods: {
+        categoryChange(category) {
+            this.selectedCategory = category
+            if (category == "all") {
+                this.selectedData = this.allData
+            }
+            else {
+                this.selectedData = this.allData.filter(x => x.category == category)
+            }
+
+        }
+
+    }
+}
+</script>
+
 <style>
 @import './Dashboard.css';
 </style>
-
-<script>
-
-</script>
