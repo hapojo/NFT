@@ -81,9 +81,6 @@
                         </div>
                     </div>
 
-                    <div>
-                        efnkingibbfuo;idnhb ikv bbheuifhbvvkkkbbkfikfclcndkefwdkdklqjkmljkwkjjkwkqjsjk
-                    </div>
 
                 </div>
             </div>
