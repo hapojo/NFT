@@ -129,6 +129,18 @@
     margin-left: 18px;
 }
 
+.card-scroll {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 55vh;
+    /* padding-bottom: 20px; */
+}
+
+.card-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+
 .inactivecat {
     color: #fff;
     border-bottom: 2px solid transparent;
@@ -164,6 +176,7 @@
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 
 .paint-section {

@@ -60,7 +60,7 @@
             </div>
 
 
-            <div class="container">
+            <div class="container card-scroll">
                 <div class="row">
 
                     <div class="col-3" v-for="data in selectedData">
@@ -79,6 +79,10 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div>
+                        efnkingibbfuo;idnhb ikv bbheuifhbvvkkkbbkfikfclcndkefwdkdklqjkmljkwkjjkwkqjsjk
                     </div>
 
                 </div>
